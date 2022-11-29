@@ -64,7 +64,9 @@ function AppRoutingOne() {
                   }
               }
             </Route>
-            <Route path='/(about|faqs)' component={ Aboutpage } />
+            {/* <Route path='/(about|faqs)' component={ Aboutpage } /> */}
+            <Route path='/about' component={ Aboutpage } />
+            <Route path='/faqs' component={ Aboutpage } />
             <Route path='/profile' component={ Profilepage }>
               {
                 logged ? 
