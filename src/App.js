@@ -32,7 +32,7 @@ function App() {
           <Link to='/login'>| Login |</Link>
           <Link to='/registro'>| Registro |</Link>
 
-          <Link to='/task/1'>| Task ||</Link>
+          <Link to='/tasks'>| Task ||</Link>
         </aside>
 
         <main>
@@ -53,7 +53,17 @@ function App() {
               }
             </Route>
             <Route path='/registro' component={ LogoutPage } />
-            <Route path='/tasks' component={ Taskspage } />
+            <Route path='/tasks' component={ Taskspage } >
+              {
+                logged ? 
+                <Taskspage />
+                :
+                () => {
+                  alert('You must be logged in. Redirecting to login...')
+                  return (<Redirect to='/login'/>)
+                }
+              }
+            </Route>
             {/* 404 - Page No Found */}
             <Route component={ Notfoundpage } />
           </Switch>

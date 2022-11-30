@@ -8,8 +8,8 @@ const Copyright = () => {
     return (
         <Typography variant="body2" color="GrayText" align="center">
             { 'Copyright (C)'}
-            <Link color="inherit" href='https://imaginaformacion.com'>
-                Imagina Formación
+            <Link color="inherit" href='https://github.com/NereaAJ'>
+                GitHub - NereaAJ
             </Link>
             { ' ' }
             { new Date().getFullYear() }

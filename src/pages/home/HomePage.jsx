@@ -1,6 +1,8 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
 
+import Copyright from '../../components/pure/Copyright';
+
 
 const Homepage = () => {
     const location = useLocation();
@@ -28,9 +30,11 @@ const Homepage = () => {
             <button onClick={() => navigateProps('/online-state')}>
                 Go To Page with State / Query Params
             </button>
-            <button onClick={() => navigate('/profile')}>
+            {/* <button onClick={() => navigate('/profile')}>
                 Go To Profile
-            </button>
+            </button> */}
+
+            <Copyright></Copyright>
         </div>
     );
 }
