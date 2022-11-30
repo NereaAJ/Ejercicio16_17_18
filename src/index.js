@@ -11,12 +11,15 @@ import 'randomcolor';
 import App from './App';
 import AppRoutingOne from './AppRoutingOne'
 import reportWebVitals from './reportWebVitals';
+import AppRoutingFinal from './AppRoutingFinal';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <AppRoutingOne />
+    {/* <AppRoutingOne /> */}
+    <AppRoutingFinal/>
   </React.StrictMode>
 );
 
